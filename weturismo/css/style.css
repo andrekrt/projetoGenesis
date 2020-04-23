@@ -1,0 +1,609 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+	position: sticky;
+	top: 0;
+	background-color: #fff;
+	z-index: 4;
+}
+
+.container-base{
+    width: 990px;
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	flex-direction: column;
+}
+
+.cabecalho{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+	background-color: #fff;
+	display: flex;
+	width: 150px;
+	height: 100px;	
+}
+
+.logo img{
+    width: 80%;
+	height: 70%;
+	margin: auto;
+}
+
+.menu{
+	margin-right: 50px;
+	display: flex;
+	align-items: center;
+	height: 50px;
+}
+
+ul{
+    display: flex;
+}
+
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a{
+	text-decoration: none;
+	padding: 15px;
+	font-size: 20px;
+	font-family: arial;
+	color: red;
+}
+
+.menu img{
+	width: 20px;
+	height: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.menuMobile{
+	display: none;
+	width: 40px;
+	height: 40px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-right: 20px;
+}
+
+.mm_line{
+	height: 2px;
+	background-color: #39aae1;
+}
+
+.slide-proximas-viagens{
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+	background-color: #000;
+}
+
+.carousel-indicators li{
+	background-color: #000;
+}
+.carousel-indicators{
+	z-index: 1;
+}
+
+.area-proximas-viagens{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+.area-titulo{
+	display: flex;
+	width: 100%;
+}
+
+.title-proximas-viagens{
+	font-size: 21px;
+    color: #717171;
+    width: 36%;
+    text-align: cent
+}
+
+.borda-proximas-viagens{
+	margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #717171;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    width: 68%;
+}
+
+.proximas-viagens{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.viagens{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 25%;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	margin: 5px;
+}
+
+.imagem-viagem img{
+	width: 100%;
+	height: 222px;
+	margin-bottom: 5px;
+}
+
+.botao-mais{
+	border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3996d2;
+    box-shadow: 0 3px #175b86;
+    color: #fff;
+	margin: 0 25%;
+	width: 80%;
+}
+
+.botao-mais a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.area-galeria{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.title-galeria{
+	font-size: 21px;
+    color: #717171;
+    width: 40%;   
+}
+
+.border-galeria{
+	margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #717171;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    width: 60%;
+}
+
+.area-fotos-galeria{
+	display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.ultimas-viagens{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.imagem-ultimas-viagem img{
+	width: 100%;
+    height: 222px;
+    margin-bottom: 5px;
+}
+
+.back-total{
+	position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 5;	
+}
+
+.back-imagem{
+	position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    height: 550px;
+    background-color: #fff;
+    margin-left: -250px;
+    margin-top: -275px;
+    padding:20px; 
+    display: none;
+    z-index: 6; 
+}
+
+.back-imagem button{
+	margin-top: 5px;
+}
+
+.area-fotos-individual{
+
+}
+
+.banner-viagem{
+	display: flex;
+	background-color: red;
+	width: 100%;
+}
+
+.banner-viagem img{
+	width: 100%;
+}
+
+.cronograma-viagem{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 15px;
+	justify-content: center;
+	align-items: center;
+}
+
+.area-title-cronograma-viagem{
+	display: flex;
+	width: 100%;
+}
+
+.title-cronograma-viagem{
+	width: 27%;
+	color: #0c40a3;
+	font-size: 20px;
+}
+
+.borda-cronograma{
+	margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #717171;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    width: 73%;
+}
+
+.dados-cronograma-completo{
+	display: flex;
+	width: 100%;
+}
+
+.title-colunas{
+	width: 20%;
+	font-weight: bold;
+	background-color: #0c40a3;
+}
+
+.table td, .table th{
+	vertical-align: middle;
+}
+
+.area-botao-comprar{
+	display: flex;
+	justify-content: center;
+	width: 30%;
+	margin-top:-13px;
+}
+
+.botao-comprar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 30px;
+	background-color:red;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.botao-comprar a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.area-formulario-reserva{
+	width: 100%;
+	
+	margin-top: 5px;
+}
+
+.rodape{
+	width: 100%;
+	display: flex;
+	margin-top: 10px;
+	border: 1px solid #000;
+	border-radius: 20px;
+}
+
+.logo-rodape{
+	width: 25%;
+	display: flex;
+	justify-content: start;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.logo-rodape img{
+	width: 150px;
+	height: 100px;
+}
+
+.area-rede-sociais{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.rede-sociais{
+	margin:5px;
+	margin-left: 170px;
+}
+
+.rede-sociais a{
+	color: black;
+	text-align: center;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.endereco{
+	display: flex;
+	text-align: center;
+	margin-left: 120px;
+}
+
+.area-localizacao{
+	width: 25%;
+	margin: 8px;
+}
+.area-localizacao iframe{
+	width: 100%;
+	height: 230px;
+}
+
+.formularioflex{
+	display: flex;
+	flex-direction: row;
+}
+
+.formularioflex input, button{
+	margin: 5px;
+}
+
+@media (max-width: 768px){
+	.container-base{
+		width: 700px;
+	}
+
+	nav ul{
+		flex-direction: column;
+		display: none;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		background-color:#fff;
+		top: 90px;
+	}
+
+	header{
+		height: auto;
+	}
+
+	.menuMobile{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.slide-proximas-viagens{
+		height: 360px;
+	}
+
+	.title-proximas-viagens{
+		width: 60%;
+	}
+
+	.title-galeria{
+		width: 76%;
+	}
+
+	.rede-sociais {
+		margin-left: 100px;
+	}
+
+	.endereco {
+		margin-left: 50px;
+	}
+}
+
+@media (max-width: 425px){
+	.container-base{
+		width: 400px;
+	}
+
+	.menu {
+		margin-right: 0;
+	}
+
+	.slide-proximas-viagens {
+		height: 250px;
+	}
+
+	.title-proximas-viagens{
+		width: 100%;
+		display:flex;
+		justify-content: center;
+	}
+
+	.borda-proximas-viagens{
+		border-bottom: 0;
+		width: 0;
+	}
+
+	.proximas-viagens{
+		flex-wrap: wrap;
+	}
+
+	.viagens{
+		width: 47%;
+	}
+
+	.title-galeria{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.border-galeria{
+		border-bottom: 0;
+		width: 0;
+	}
+
+	.area-fotos-galeria{
+		flex-wrap: wrap;
+	}
+
+	.ultimas-viagens{
+		width: 47%;
+	}
+
+	.rodape{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logo-rodape{
+		width: 100%;
+		justify-content: center;
+	}
+
+	.area-rede-sociais{
+		width: 100%;
+	}
+
+	.rede-sociais{
+		margin-left: 120px;
+	}
+
+	.endereco{
+		margin-left: 85px;
+	}
+
+	.area-localizacao{
+		width: 90%;
+	}
+
+	.direitos-autorais{
+		text-align: center;
+	}
+	.back-imagem{
+		height: 450px;
+		width: 400px;
+		margin-left: -200px;
+		margin-top: -225px;
+	}
+}
+
+@media (max-width: 375px){
+	.container-base{
+		width: 370px;
+	}
+
+	.title-galeria{
+		font-size: 18px;
+	}
+	.back-imagem {
+		height: 350px;
+		width: 350px;
+		margin-left: -175px;
+		margin-top: -175px;
+	}
+}
+
+@media (max-width:320px){
+	.container-base{
+		width: 300px;
+	}
+	.slide-proximas-viagens{
+		height: 160px;
+	}
+
+	.title-proximas-viagens{
+		font-size: 18px;
+	}
+	.proximas-viagens{
+		justify-content: center;
+	}
+
+	.viagens{
+		width: 75%;
+	}
+
+	.title-galeria{
+		font-size: 15px;
+	}
+
+	.ultimas-viagens{
+		width: 75%;
+	}
+
+	.rede-sociais{
+		margin-left: 80px;
+	}
+
+	.endereco{
+		margin-left: 30px; 
+	}
+
+	.direitos-autorais{
+		font-size: 13px;
+	}
+	.back-imagem {
+		height: 350px;
+		width: 300px;
+		margin-left: -150px;
+		margin-top: -175px;
+	}
+}
