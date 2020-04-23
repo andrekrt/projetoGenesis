@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140752564-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-140752564-1');
+		</script>
+
+		<title>Genesis</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"> <!-- evita ao diminuir o tamanho que a página diminua o zoom -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<script type="text/javascript">
+			window.onload = function(){
+				document.querySelector(".menuMobile").addEventListener("click", function(){
+					if(document.querySelector(".menu nav ul").style.display == 'flex'){
+						document.querySelector(".menu nav ul").style.display='none';
+						document.getElementById("geral").style.marginTop='0px'
+
+					}else{
+						document.querySelector(".menu nav ul").style.display='flex';
+						document.getElementById("geral").style.marginTop='150px'
+					}
+				});
+			};
+		</script>
+	</head>
+	<body>
+		<header class="cabecalho">
+			<div class="containerbase">
+				<div class="logo">
+					<a href=""> <img src="img/genesis/logo.png"></a>
+				</div>
+				<div class="menu">
+					<nav>
+						<div class="menuMobile">
+							<div class="mm_line"></div>
+							<div class="mm_line"></div>
+							<div class="mm_line"></div>
+						</div>
+						<ul>
+							<li class="active"><a href=""> Inicio </a></li>
+							<li class=""><a href="#servico-area"> Serviços </a></li>
+							<li class=""><a href="#rodape"> Informações e Contato </a></li>
+							<!--<li class=""><a href=""> Logotipos </a></li>
+							<li class=""><a href=""> Crie Seu Site </a></li>-->
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<section id="geral">
+			<div class="containerbase banner">
+				
+				<div id="slideshowExemplo" class="slide carousel" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active" >
+							<img src="img/banner01.jpeg" class="w-100"/>
+						</div>
+						<div class="carousel-item">
+							<img src="img/banner01.jpeg" class="w-100"/>
+						</div>
+						<div class="carousel-item">
+							<img src="img/banner01.jpeg" class="w-100"/>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#slideshowExemplo" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#slideshowExemplo" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>				
+				</div>
+					
+			</div>
+			<div class="servico-area containerbase" id="servico-area">
+					<div class="servico-tittle">
+						Conheça Nossos Serviços
+					</div>
+					<div class="servico-border">
+						
+					</div>
+			</div>	
+			<div class="servicos containerbase">
+				<div class="servico-tipo">
+					<div class="servico-tipo-nome">
+						<!--<span id="tittle">Placas para Daminhas </span> <br>-->
+						<!--<span id="preco">R$ 1.000,00 </span>-->
+						<div class="servico-tipo-nome-border"> </div>
+					</div>
+					<div class="servico-img">
+						<img src="img/1.jpg">
+					</div>
+					<!--<div class="botao-mais">
+						<a href=""> <span> Saber Mais... </span> </a>
+ 					</div>-->
+				</div>
+				<div class="servico-tipo">
+					<div class="servico-tipo-nome">
+						<!--<span id="tittle">Crachás em PVC </span> <br>-->
+						<!--<span id="preco">R$ 22,00 (1000 UNID.) </span>-->
+						<div class="servico-tipo-nome-border"> </div>
+					</div>
+					<div class="servico-img">
+						<img src="img/3.jpg">
+					</div>
+					<!--<div class="botao-mais">
+						<a href=""> <span> Saber Mais... </span> </a>
+ 					</div>-->
+				</div>
+				<div class="servico-tipo">
+					<div class="servico-tipo-nome">
+						<!--<span id="tittle">Envelopamento de Veículos </span> <br>-->
+						<!--<span id="preco">R$ 84,90 (4000 UNID.) </span>-->
+						<div class="servico-tipo-nome-border"> </div>
+					</div>
+					<div class="servico-img">
+						<img src="img/4.jpg">
+					</div>
+					<!--<div class="botao-mais">
+						<a href=""> <span> Saber Mais... </span> </a>
+ 					</div>-->
+				</div>
+				<div class="servico-tipo">
+					<div class="servico-tipo-nome">
+						<!--<span id="tittle">Cardápios Personalizados </span> <br>-->
+						<!--<span id="preco">R$ 1.000,00 </span>-->
+						<div class="servico-tipo-nome-border"> </div>
+					</div>
+					<div class="servico-img">
+						<img src="img/5.jpg">
+					</div>
+					<!--<div class="botao-mais">
+						<a href=""> <span> Saber Mais... </span> </a>
+ 					</div>-->
+				</div>
+				<div class="servico-tipo">
+					<div class="servico-tipo-nome">
+						<!--<span id="tittle">Cardápios Personalizados </span> <br>-->
+						<!--<span id="preco">R$ 1.000,00 </span>-->
+						<div class="servico-tipo-nome-border"> </div>
+					</div>
+					<div class="servico-img">
+						<img src="img/6.jpg">
+					</div>
+					<!--<div class="botao-mais">
+						<a href=""> <span> Saber Mais... </span> </a>
+ 					</div>-->
+				</div>
+				<div class="servico-tipo">
+					<div class="servico-tipo-nome">
+						<!--<span id="tittle">Cardápios Personalizados </span> <br>-->
+						<!--<span id="preco">R$ 1.000,00 </span>-->
+						<div class="servico-tipo-nome-border"> </div>
+					</div>
+					<div class="servico-img">
+						<img src="img/7.jpg">
+					</div>
+					<!--<div class="botao-mais">
+						<a href=""> <span> Saber Mais... </span> </a>
+ 					</div>-->
+				</div>
+				<div class="servico-tipo">
+					<div class="servico-tipo-nome">
+						<!--<span id="tittle">Cardápios Personalizados </span> <br>-->
+						<!--<span id="preco">R$ 1.000,00 </span>-->
+						<div class="servico-tipo-nome-border"> </div>
+					</div>
+					<div class="servico-img">
+						<img src="img/8.jpg">
+					</div>
+					<!--<div class="botao-mais">
+						<a href=""> <span> Saber Mais... </span> </a>
+ 					</div>-->
+				</div>
+				<div class="servico-tipo">
+					<div class="servico-tipo-nome">
+						<!--<span id="tittle">Cardápios Personalizados </span> <br>-->
+						<!--<span id="preco">R$ 1.000,00 </span>-->
+						<div class="servico-tipo-nome-border"> </div>
+					</div>
+					<div class="servico-img">
+						<img src="img/9.jpg">
+					</div>
+					<!--<div class="botao-mais">
+						<a href=""> <span> Saber Mais... </span> </a>
+ 					</div>-->
+				</div>
+				<div class="servico-tipo">
+					<div class="servico-tipo-nome">
+						<!--<span id="tittle">Cardápios Personalizados </span> <br>-->
+						<!--<span id="preco">R$ 1.000,00 </span>-->
+						<div class="servico-tipo-nome-border"> </div>
+					</div>
+					<div class="servico-img">
+						<img src="img/10.jpg">
+					</div>
+					<!--<div class="botao-mais">
+						<a href=""> <span> Saber Mais... </span> </a>
+ 					</div>-->
+				</div>
+				<div class="servico-tipo">
+					<div class="servico-tipo-nome">
+						<!--<span id="tittle">Cardápios Personalizados </span> <br>-->
+						<!--<span id="preco">R$ 1.000,00 </span>-->
+						<div class="servico-tipo-nome-border"> </div>
+					</div>
+					<div class="servico-img">
+						<img src="img/11.jpg">
+					</div>
+					<!--<div class="botao-mais">
+						<a href=""> <span> Saber Mais... </span> </a>
+ 					</div>-->
+				</div>
+				<div class="servico-tipo">
+					<div class="servico-tipo-nome">
+						<!--<span id="tittle">Cardápios Personalizados </span> <br>-->
+						<!--<span id="preco">R$ 1.000,00 </span>-->
+						<div class="servico-tipo-nome-border"> </div>
+					</div>
+					<div class="servico-img">
+						<img src="img/12.jpg">
+					</div>
+					<!--<div class="botao-mais">
+						<a href=""> <span> Saber Mais... </span> </a>
+ 					</div>-->
+				</div>
+				<div class="servico-tipo">
+					<div class="servico-tipo-nome">
+						<!--<span id="tittle">Cardápios Personalizados </span> <br>-->
+						<!--<span id="preco">R$ 1.000,00 </span>-->
+						<div class="servico-tipo-nome-border"> </div>
+					</div>
+					<div class="servico-img">
+						<img src="img/13.jpg">
+					</div>
+					<!--<div class="botao-mais">
+						<a href=""> <span> Saber Mais... </span> </a>
+ 					</div>-->
+				</div>
+				<div class="servico-tipo">
+					<div class="servico-tipo-nome">
+						<!--<span id="tittle">Cardápios Personalizados </span> <br>-->
+						<!--<span id="preco">R$ 1.000,00 </span>-->
+						<div class="servico-tipo-nome-border"> </div>
+					</div>
+					<div class="servico-img">
+						<img src="img/14.jpg">
+					</div>
+					<!--<div class="botao-mais">
+						<a href=""> <span> Saber Mais... </span> </a>
+ 					</div>-->
+				</div>
+				<div class="servico-tipo">
+					<div class="servico-tipo-nome">
+						<!--<span id="tittle">Cardápios Personalizados </span> <br>-->
+						<!--<span id="preco">R$ 1.000,00 </span>-->
+						<div class="servico-tipo-nome-border"> </div>
+					</div>
+					<div class="servico-img">
+						<img src="img/15.jpg">
+					</div>
+					<!--<div class="botao-mais">
+						<a href=""> <span> Saber Mais... </span> </a>
+ 					</div>-->
+				</div>
+				<div class="servico-tipo">
+					<div class="servico-tipo-nome">
+						<!--<span id="tittle">Cardápios Personalizados </span> <br>-->
+						<!--<span id="preco">R$ 1.000,00 </span>-->
+						<div class="servico-tipo-nome-border"> </div>
+					</div>
+					<div class="servico-img">
+						<img src="img/16.jpg">
+					</div>
+					<!--<div class="botao-mais">
+						<a href=""> <span> Saber Mais... </span> </a>
+ 					</div>-->
+				</div>
+				<div class="servico-tipo">
+					<div class="servico-tipo-nome">
+						<!--<span id="tittle">Cardápios Personalizados </span> <br>-->
+						<!--<span id="preco">R$ 1.000,00 </span>-->
+						<div class="servico-tipo-nome-border"> </div>
+					</div>
+					<div class="servico-img">
+						<img src="img/1.jpg">
+					</div>
+					<!--<div class="botao-mais">
+						<a href=""> <span> Saber Mais... </span> </a>
+ 					</div>-->
+				</div>
+			</div>
+			<!--<footer id="rodape">
+				<div class="containerbase rodape">
+					<div class="footer_copy">
+						&copy Copyright - <br>Todos os Direitos Reservados	
+					</div>
+					<div class="rede-social">
+						Siga Nossas Redes Socais
+						<a class="remove-link" href="https://www.instagram.com/genesiscomunica/?hl=pt-br" target="blank">  <img src="https://img.icons8.com/color/48/000000/instagram-new.png"> </a>
+						<!--<a class="remove-link" href="https://www.facebook.com/andre.santos.sccp" target="blank"> <img src="https://img.icons8.com/color/48/000000/facebook.png"> </a> -->
+					<!--</div>
+					<div class="contato">
+						Contatos:<br>
+						<a href=" http://api.whatsapp.com/send?1=pt_BR&phone=5599988095499"> (99) 98809-5499 </a><br>
+						<!--<a href="https://mail.google.com/mail/u/0/?tab=wm#inbox"> genesiscomunica@hotmail.com </a><br>-->
+						<!--<a href="https://www.google.com.br/maps/place/R.+Teixeira+de+Freitas,+1733,+Bacabal+-+MA,+65700-000/@-4.2405216,-44.7893533,17z/data=!3m1!4b1!4m5!3m4!1s0x78a6eb8576e44d5:0xcadeb3654992bd5e!8m2!3d-4.2405216!4d-44.7871646?hl=pt-BR"> Rua Teixeira de Freitas, 1723 <br> Centro, Bacabal - MA</a>
+					</div>
+
+				</div>
+			</footer>-->
+			<footer id="rodape" class="rodape">
+				<div class="containerbase rodape">
+					<div class="logo">
+						<img src="img/genesis/logo.png">
+					</div>
+					<div class="rede-social">
+						<h5>INFORMAÇÕES E CONTATO</h5>
+						<div class="insta remove-link">	
+							<a class="" href="https://www.instagram.com/genesiscomunica/?hl=pt-br" target="blank">
+								<img src="https://img.icons8.com/color/48/000000/instagram-new.png"> @genesiscomunica
+							</a>
+						</div>
+						<div class="whats remove-link" >
+						<a class="" href=" http://api.whatsapp.com/send?1=pt_BR&phone=5599988095499" target="blank">
+								<img src="https://img.icons8.com/color/48/000000/whatsapp.png">(99) 98809-5499 
+						</a>
+						</div>
+						<div class="endereco">
+							Rua Teixeira de Freitas, 1723 <br> Centro, Bacabal - MA	
+						</div>
+					</div>
+					<div class="mapa">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.8959180814504!2d-44.78935328523933!3d-4.240521596917341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78a6eb8576e44d5%3A0xcadeb3654992bd5e!2sR.+Teixeira+de+Freitas%2C+1733%2C+Bacabal+-+MA%2C+65700-000!5e0!3m2!1spt-BR!2sbr!4v1558490467231!5m2!1spt-BR!2sbr" width="220" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="footer_copy">
+					&copy; Copyright 2019 - Todos os Direitos Reservados <br> Desenvolvido por André Santos
+				</div>
+			</footer>
+		</section>
+		
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
